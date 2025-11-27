@@ -64,15 +64,9 @@ All models were rigorously tuned using **Optuna** with the Tree-structured Parze
 
 The models were evaluated based on their validation Macro F1 Scores. The custom Neural Network performed exceptionally well, likely due to the effectiveness of entity embeddings and global optimization via 600+ trials.
 
-| Model Architecture | Validation Macro F1 Score |
-| :--- | :--- |
-| Custom Neural Network | 0.6599 |
-| CatBoost Classifier | 0.6463 |
-| Support Vector Machine | 0.5778 |
-
 ## 5. Requirements and Installation
 
-The project requires Python 3.8+ and the following libraries. GPU acceleration requires CUDA-enabled versions of PyTorch and CatBoost.
+The project requires Python and the following libraries. GPU acceleration requires CUDA-enabled versions of PyTorch and CatBoost.
 
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn optuna catboost torch torchvision
